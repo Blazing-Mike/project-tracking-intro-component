@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+body {
+  font-family: "Barlow", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+button,
+button:focus {
+  outline: transparent;
+}
+img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 4rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  height: 40px;
+  padding: 3% 5%;
+  z-index: 2;
+}
+.hamburger {
+  max-width: 2rem;
+  margin-top: 0.3rem;
+}
+
+.Navbar__Items {
+  display: flex;
+  gap: 25px;
+}
+
+.Navbar__Link {
+  color: hsl(230, 29%, 20%);
+  text-decoration: none;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.disabled {
+  color: hsl(231, 7%, 65%);
+}
+
+.Navbar__Link:hover {
+  color: hsl(231, 7%, 65%);
+  border-bottom: 2px solid hsl(230, 29%, 20%);
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+.responsive {
+  position: relative;
+  left: 80px;
+  top: 10px;
+}
+.bold {
+  margin: 20px 0;
+  font-weight: 700;
+  color: hsl(230, 11%, 40%);
+}
+
+.btn-bold {
+  background: hsl(230, 29%, 20%);
+  color: hsl(207, 33%, 95%);
+  border-radius: 1.5rem;
+  padding: 0.4rem;
+  width: 4rem;
+  font-weight: 700;
+  border: transparent;
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: hsl(230, 29%, 20%);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.para {
+  color: hsl(231, 7%, 65%);
+  padding-left: 10px;
+}
+
+.submit {
+  background: hsl(0, 100%, 68%);
+  color: hsl(207, 33%, 95%);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: transparent;
+  height: 2.3rem;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(231, 7%, 65%);
+  border: transparent;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  margin-top: 3rem;
+}
+
+.text {
+  max-width: 27rem;
+}
+
+@media screen and (max-width: 680px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10% 5%;
+    position: relative;
+    margin: 2% 10%;
+  }
+
+  .Navbar__Items {
+    display: none;
+    background-color: white;
+    width: 100%;
+    padding: 5%;
+    align-items: center;
+    border-radius: 10px;
+    background: hsl(231, 7%, 65%);
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  .Navbar-btn {
+    display: none;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .disabled {
+    color: hsl(207, 33%, 95%);
+  }
+
+  .disabled:hover {
+    color: hsl(230, 29%, 20%);
+  }
+
+  .Navbar__Link:hover {
+    color: hsl(230, 29%, 20%);
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .illustration {
+    position: relative;
+    left: 100px;
+    top: 10px;
+    max-width: 40rem;
+  }
+}
